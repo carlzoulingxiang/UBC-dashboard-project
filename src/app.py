@@ -10,6 +10,7 @@ app = Dash(
     server=server,
     external_stylesheets=[dbc.themes.BOOTSTRAP]
 )
+server = app.server
 app.layout = layout
 
 cache = Cache(app.server, config={
