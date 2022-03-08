@@ -4,10 +4,10 @@ from flask_caching import Cache
 import flask
 from layout.layout import layout
 
-# server = flask.Flask(__name__)
+server = flask.Flask(__name__)
 app = Dash(
     name=__name__, 
-    #server=server,
+    server=server,
     external_stylesheets=[dbc.themes.BOOTSTRAP]
 )
 
